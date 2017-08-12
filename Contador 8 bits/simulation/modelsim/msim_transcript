@@ -1,0 +1,47 @@
+# do Contador8bits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/aviador/intelFPGA_lite/17.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/aviador/Documents/VHDL/Contador 8 bits/Contador8bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:20:37 on Jul 19,2017
+# vcom -reportprogress 300 -93 -work work /home/aviador/Documents/VHDL/Contador 8 bits/Contador8bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity contador8bits
+# -- Compiling architecture cont_arch of contador8bits
+# End time: 16:20:37 on Jul 19,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.contador8bits
+# vsim work.contador8bits 
+# Start time: 16:20:41 on Jul 19,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.contador8bits(cont_arch)
+force -freeze sim:/contador8bits/clock 0 0, 1 {5 ps} -r 10
+add wave -position insertpoint  \
+sim:/contador8bits/clock
+add wave -position insertpoint  \
+sim:/contador8bits/leds
+run 100 ns
+# ** Fatal: (vsim-3421) Value 256 is out of range 0 to 255.
+#    Time: 28155 ps  Iteration: 0  Process: /contador8bits/line__15 File: /home/aviador/Documents/VHDL/Contador 8 bits/Contador8bits.vhd
+# Fatal error in Process line__15 at /home/aviador/Documents/VHDL/Contador 8 bits/Contador8bits.vhd line 27
+# 
+# HDL call sequence:
+# Stopped at /home/aviador/Documents/VHDL/Contador 8 bits/Contador8bits.vhd 27 Process line__15
+# 
+# End time: 16:27:00 on Jul 19,2017, Elapsed time: 0:06:19
+# Errors: 2, Warnings: 0

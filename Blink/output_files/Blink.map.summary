@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jul 19 16:42:44 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : Blink
+Top-level Entity Name : Blink
+Family : Cyclone IV E
+Total logic elements : 47
+    Total combinational functions : 47
+    Dedicated logic registers : 26
+Total registers : 26
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

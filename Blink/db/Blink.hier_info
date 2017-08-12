@@ -1,0 +1,44 @@
+|Blink
+clk_in => led_off[0].CLK
+clk_in => led_off[1].CLK
+clk_in => led_off[2].CLK
+clk_in => led_off[3].CLK
+clk_in => led_off[4].CLK
+clk_in => led_off[5].CLK
+clk_in => led_off[6].CLK
+clk_in => led_off[7].CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_in => counter[18].CLK
+clk_in => counter[19].CLK
+clk_in => counter[20].CLK
+clk_in => counter[21].CLK
+clk_in => counter[22].CLK
+clk_in => counter[23].CLK
+clk_in => counter[24].CLK
+led_out[0] <= led_off[0].DB_MAX_OUTPUT_PORT_TYPE
+led_out[1] <= led_off[1].DB_MAX_OUTPUT_PORT_TYPE
+led_out[2] <= led_off[2].DB_MAX_OUTPUT_PORT_TYPE
+led_out[3] <= led_off[3].DB_MAX_OUTPUT_PORT_TYPE
+led_out[4] <= led_off[4].DB_MAX_OUTPUT_PORT_TYPE
+led_out[5] <= led_off[5].DB_MAX_OUTPUT_PORT_TYPE
+led_out[6] <= led_off[6].DB_MAX_OUTPUT_PORT_TYPE
+led_out[7] <= led_off[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,29 @@
+LIBRARY ieee;
+	USE ieee.std_logic_1164.ALL;
+	USE ieee.numeric_std.ALL;
+
+ENTITY led_blink IS
+	PORT(
+		clk_in : IN STD_LOGIC;
+		led_out : OUT STD_LOGIC;
+	);
+END ENTITY;
+
+ARCHITECTURE behavior OF led_blinker IS
+	SIGNAL led_off : STD_LOGIC :- '0';
+BEGIN
+	PROCESS(clk_in)
+		VARIABLE counter INTEGER RANGE 0 to 25000000;
+	BEGIN
+		IF(RISING_EDGE(clk_in)) THEN
+			IF(counter = 25000000) THEN
+				counter := 0;
+				led_off <= NOT led_off;
+			ELSE
+				counter := counter + 1;
+			END IF;
+		END IF;
+	END PROCESS;
+	
+	led_out <= led_off;
+END ARCHITECTURE;
